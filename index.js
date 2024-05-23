@@ -1,1 +1,3 @@
-console.log("es una prueba");
+function openAlert() {
+    alert("Reserva");
+}
