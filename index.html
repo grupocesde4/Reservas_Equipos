@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="sty">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Reserva</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hola mundo</h1>
+  <div class="container">
+    <h2>Formulario de Reserva</h2>
+    <form action="#">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="identificacion">Identificación:</label>
+      <input type="text" id="identificacion" name="identificacion" required>
+
+      <label for="fecha-llegada">Fecha de Llegada:</label>
+      <input type="date" id="fecha-llegada" name="fecha-llegada" required>
+
+      <label for="fecha-salida">Fecha de Salida:</label>
+      <input type="date" id="fecha-salida" name="fecha-salida" required>
+
+      <label for="comentarios">Comentarios:</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+      <button type="submit">Enviar Reserva</button>
+    </form>
+  </div>
 </body>
 </html>
