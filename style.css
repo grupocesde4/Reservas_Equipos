@@ -5,7 +5,7 @@ body {
   
   .container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 80px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -69,15 +69,21 @@ body {
     font-size: 12px;
     line-height:30px;
     color:#777;
-    background:#0CF;
+    background-color: rgba(0, 204, 255, 0); /* Color de fondo con opacidad */
+    background-image: url(Reservas_Equipos/images/ecesde-1.webp);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
   }
   
   .container {
-    max-width:400px;
-    width:100%;
-    margin:0 auto;
-    position:relative;
-  }
+    max-width: 400px;
+    width: 100%;
+    margin-top: 80px; /* Agrega un margen superior de 20px */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
   
   #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
   
@@ -165,3 +171,22 @@ body {
   :-ms-input-placeholder {
    color:#888;
   }
+
+  /* Estilo para los enlaces activos */
+.nav-pills .nav-link.active {
+  color: #fff; /* Color del texto */
+  background-color: #ff00bf; /* Color de fondo */
+}
+
+/* Estilo para los enlaces */
+.nav-pills .nav-link {
+  color: #007bff; /* Color del texto */
+  background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilo para los enlaces al pasar el ratón */
+.nav-pills .nav-link:hover {
+  color: #0056b3; /* Color del texto al pasar el ratón */
+  text-decoration: none; /* Quita la subrayado al pasar el ratón */
+}
+En este ejemplo, he 
