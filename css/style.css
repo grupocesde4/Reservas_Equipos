@@ -46,7 +46,7 @@ body {
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #24b300;
   }
   
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
@@ -175,18 +175,18 @@ body {
 
   /* Estilo para los enlaces activos */
 .nav-pills .nav-link.active {
-  color: #fff; /* Color del texto */
+  color: #0e0909; /* Color del texto */
   background-color: #ff00bf; /* Color de fondo */
 }
 
 /* Estilo para los enlaces */
 .nav-pills .nav-link {
-  color: #007bff; /* Color del texto */
+  color: #3cff00; /* Color del texto */
   background-color: transparent; /* Fondo transparente */
 }
 
 /* Estilo para los enlaces al pasar el ratón */
 .nav-pills .nav-link:hover {
-  color: #0056b3; /* Color del texto al pasar el ratón */
+  color: #42b300; /* Color del texto al pasar el ratón */
   text-decoration: none; /* Quita la subrayado al pasar el ratón */
 }
