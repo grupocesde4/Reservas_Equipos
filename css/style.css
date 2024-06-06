@@ -27,11 +27,12 @@ body {
   border: none;
   background: #ed207b;
   color: white;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
   transition: 1000ms;
+  margin: 10px 0px -10px 0px;
 }
 
 .btn-outline-botton-reservet:hover{

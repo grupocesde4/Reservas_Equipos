@@ -38,7 +38,7 @@
             <a class="nav-link" href="index.html">Reservas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cesde_view.html">Cedes</a>
+            <a class="nav-link" href="cesde_view.html">Sedes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -65,47 +65,70 @@
               <div class="col">
                 <div class="form-group">
                   <label for="nameInput">Correo Institucional</label>
-                  <input type="text" id="nameInput" class="form-control" />
+                  <input type="text" id="emailInput" class="form-control" />
                 </div>
               </div>
               <div class="col">
                 <div class="form-group">
-                  <label for="lastNameInput">Codigo del equipo</label>
-                  <input type="text" class="form-control" id="lastNameInput" />
+                  <label for="codeLaptopInput">Codigo del equipo</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="codeLaptopInput"
+                  />
                 </div>
               </div>
               <div class="col">
                 <div class="form-group">
-                  <label for="lastNameInput">Sede</label>
-                  <input type="text" class="form-control" id="lastNameInput" />
+                  <label for="campus">Sede</label>
+                  <input type="text" class="form-control" id="campus" />
                 </div>
               </div>
             </div>
             <div class="form-row">
               <div class="col">
-                <input type="date" class="form-control" placeholder="Fecha de reserva" />
+                <label for="reservation_date">Fecha de reserva</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="reservation_date"
+                />
               </div>
               <div class="col">
-                <input type="date" class="form-control" placeholder="Fecha de devolución" />
+                <label for="return_date">Fecha de devolucion</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  
+                  id="return_date"
+                />
               </div>
-              
+
               <div class="col">
-                <input type="text" class="form-control" placeholder="Jornada" />
+                <label for="return_date">Jornada</label>
+                <input type="text" class="form-control" id="working_day"/>
               </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="Salón" />
+                <label for="return_date">Salon</label>
+                <input type="text" class="form-control" id="classroom" />
               </div>
-            </div>
-            </div>
-            <div class="form-row center-items">
-               <button type="button" class="btn-outline-botton-reservet">Reserva tu equipo</button>
             </div>
 
+            <div class="form-row center-items">
+              <button
+                type="button"
+                class="btn-outline-botton-reservet"
+                onclick="sendReservation()"
+              >
+                Reserva tu equipo
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </div>
 
-    <script src="./index.js"></script>
-  </body>
+    <script src="./js/index.js"></script>
+    
+  </body>
 </html>
