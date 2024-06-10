@@ -34,4 +34,57 @@ function sendReservation() {
   } catch (error) {
     console.error(error);
   }
+
 }
+
+//Traemos los links
+const link_reservas = document.querySelector("#link_reservas");
+const link_sede = document.querySelector("#link_sede");
+const link_nosotros = document.querySelector("#link_nosotros");
+
+//Traemos los cada contenedor donde está la información
+const content_reserves = document.querySelector("#content_reserves");
+const content_cesde= document.querySelector("#content_cesde");
+const content_about = document.querySelector("#content_about");
+
+const contents = document.querySelectorAll(".content");
+
+//Al dar click en el link que me despliegue el contenedor correspondiente
+link_reservas.addEventListener('click', () => {
+
+  //Ocultamos los demas contenedores
+  contents.forEach( content => {
+    content.classList.add('hide-content');
+    content.classList.remove('show-content');
+  });
+
+ //Mostramos el contendeor según el link seleccionado
+  content_reserves.classList.add('show-content');
+}); 
+
+link_sede.addEventListener('click', () => {
+  
+  //Ocultamos los demas contenedores
+  contents.forEach( content => {
+    content.classList.add('hide-content');
+    content.classList.remove('show-content');
+  });
+
+  //Mostramos el contendeor según el link seleccionado
+  content_cesde.classList.add('show-content');
+}); 
+
+link_nosotros.addEventListener('click', () => {
+
+  //Ocultamos los demas contenedores
+  contents.forEach( content => {
+    content.classList.add('hide-content');
+    content.classList.remove('show-content');
+  });
+
+  //Mostramos el contendeor según el link seleccionado
+  content_about.classList.add('show-content');
+}); 
+
+
+

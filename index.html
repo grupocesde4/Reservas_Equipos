@@ -13,6 +13,11 @@
   </head>
 
   <body>
+
+    <div id="content">
+
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">
         <img
@@ -35,91 +40,114 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Reservas</a>
+            <a class="nav-link" id="link_reservas">Reservas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cesde_view.html">Sede Bello</a>
+            <a class="nav-link" id="link_sede">Sede Bello</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
+            <a class="nav-link" id="link_nosotros">Nosotros</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class="container">
-      <div class="card mt-4">
-        <div class="card-body">
-          <h1>Reserva tu Equipo</h1>
-          
-          <p>
-            Póngase en contacto con nosotros hoy mismo y reciba una respuesta en
-            24 horas!
-          </p>
-          <form id="contact" action="" method="post">
-            <div class="form-row">
-              <div class="col">
-                <div class="form-group">
-                  <label for="nameInput">Correo Institucional</label>
-                  <input type="text" id="emailInput" class="form-control" />
+      <div class="content show-conte" id="content_reserves">
+        <div class="card mt-4">
+          <div class="card-body">
+            <h1>Reserva tu Equipo</h1>
+            
+            <p>
+              Póngase en contacto con nosotros hoy mismo y reciba una respuesta en
+              24 horas!
+            </p>
+            <form id="contact" action="" method="post">
+              <div class="form-row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="nameInput">Correo Institucional</label>
+                    <input type="text" id="emailInput" class="form-control" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="codeLaptopInput">Codigo del equipo</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="codeLaptopInput"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="campus">Sede</label>
+                    <input type="text" class="form-control" id="campus" />
+                  </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-group">
-                  <label for="codeLaptopInput">Codigo del equipo</label>
+              <div class="form-row">
+                <div class="col">
+                  <label for="reservation_date">Fecha de reserva</label>
                   <input
-                    type="text"
+                    type="date"
                     class="form-control"
-                    id="codeLaptopInput"
+                    id="reservation_date"
                   />
                 </div>
-              </div>
-              <div class="col">
-                <div class="form-group">
-                  <label for="campus">Sede</label>
-                  <input type="text" class="form-control" id="campus" />
+                <div class="col">
+                  <label for="return_date">Fecha de devolucion</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    
+                    id="return_date"
+                  />
+                </div>
+  
+                <div class="col">
+                  <label for="return_date">Jornada</label>
+                  <input type="text" class="form-control" id="working_day"/>
+                </div>
+                <div class="col">
+                  <label for="return_date">Salon</label>
+                  <input type="text" class="form-control" id="classroom" />
                 </div>
               </div>
-            </div>
-            <div class="form-row">
-              <div class="col">
-                <label for="reservation_date">Fecha de reserva</label>
-                <input
-                  type="date"
-                  class="form-control"
-                  id="reservation_date"
-                />
+  
+              <div class="form-row center-items">
+                <button
+                  type="button"
+                  class="btn-outline-botton-reservet"
+                  onclick="sendReservation()"
+                >
+                  Reserva tu equipo
+                </button>
               </div>
-              <div class="col">
-                <label for="return_date">Fecha de devolucion</label>
-                <input
-                  type="date"
-                  class="form-control"
-                  
-                  id="return_date"
-                />
-              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
-              <div class="col">
-                <label for="return_date">Jornada</label>
-                <input type="text" class="form-control" id="working_day"/>
-              </div>
-              <div class="col">
-                <label for="return_date">Salon</label>
-                <input type="text" class="form-control" id="classroom" />
-              </div>
-            </div>
+      <div class="content hide-content" id="content_cesde">
+          Sección Sede Bello
+      </div>
 
-            <div class="form-row center-items">
-              <button
-                type="button"
-                class="btn-outline-botton-reservet"
-                onclick="sendReservation()"
-              >
-                Reserva tu equipo
-              </button>
-            </div>
-          </form>
+      <div class="content hide-content" id="content_about">
+        Sección Nosotros
+        <div class="card text-center">
+          <div class="card-header">
+            Nosotros
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Cesde, 50 años de orgullo</h5>
+            <p class="card-text">Un recorrido que nos hace soñar.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
         </div>
       </div>
     </div>

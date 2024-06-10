@@ -11,6 +11,10 @@ body {
 }
 
 
+.navbar a {
+  cursor: pointer;
+}
+
 .navbar .image_logo {
   max-width: 250px;
   height: auto;
@@ -64,4 +68,12 @@ footer {
 .footer-content {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.hide-content {
+  display: none;
+}
+
+.show-content {
+  display: block;
 }
