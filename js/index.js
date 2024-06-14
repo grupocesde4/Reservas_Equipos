@@ -17,13 +17,29 @@ function sendReservation() {
     console.log(working_day);
     console.log(classroom);
 
+    // NOTA: Aquí cambie en campus y en working_day la condición: 
+    // Antes era: campus.length > 1, cambió a campus > 0
+    // Esto significa, como ya no manejamos el nombre sino los ids (revisar los value en el select)
+    // Entonces los value obtenidos ya no son texto sino numeros.
+    // Por eso ya no usamos el .length (metodo que cuenta la cantidad de caracteres)
+    // Simplemente validamos el valor numerico 
+    //    (si es mayor a 0, es porque el usuario escogió una opción)
+    //    (si no es mayor a 0, es porque el usuario no escogió una opción (Seleccione...))
+
+
+
+    // NOTA 2: 
+    //    * Si vamos a validar texto o arrays, usamos el .length
+    //    * Si vamos a validar numeros, usamos condicionales < > <= >=
+    //    * Si vamos a validar booleans, usamos true | false 
+
     if (
       email.length > 1 &&
       codelaptop.length > 1 &&
-      campus.length > 1 &&
+      campus > 0 &&
       reservation_date.length > 1 &&
       return_date.length > 1 &&
-      working_day.length > 1 &&
+      working_day > 0 &&
       classroom.length > 1
     ) {
       reservas = reservas + 1;

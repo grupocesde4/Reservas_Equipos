@@ -59,7 +59,7 @@
             <h1>Reserva tu Equipo</h1>
             
             <p>
-              Póngase en contacto con nosotros hoy mismo y reciba una respuesta en
+              Póngase en contacto con nosotros hoy mismo y reciba una respuesta en menos de
               24 horas!
             </p>
             <form id="contact" action="" method="post">
@@ -83,7 +83,13 @@
                 <div class="col">
                   <div class="form-group">
                     <label for="campus">Sede</label>
-                    <input type="text" class="form-control" id="campus" />
+                    <select class="form-control" id="campus">
+                      <option value="0">Seleccione</option>
+                      <option value="1">Bello</option>
+                      <option value="2">Medellin</option>
+                      <option value="3">Envigado</option>
+                      <option value="4">Rionegro</option>
+                    </select>
                   </div>
                 </div>
               </div>
@@ -107,12 +113,22 @@
                 </div>
   
                 <div class="col">
-                  <label for="return_date">Jornada</label>
-                  <input type="text" class="form-control" id="working_day"/>
+                  <label for="working_day">Jornada</label>
+                  <select class="form-control" id="working_day">
+                    <option value="0">Seleccione</option>
+                    <option value="1">Mañana</option>
+                    <option value="2">Tarde</option>
+                    <option value="3">Noche</option>
+                  </select>  
+
                 </div>
+
+
+
                 <div class="col">
                   <label for="return_date">Salon</label>
                   <input type="text" class="form-control" id="classroom" />
+
                 </div>
               </div>
   
@@ -132,6 +148,17 @@
 
       <div class="content hide-content" id="content_cesde">
           Sección Sede Bello
+          <h1>Programas Cesde Bello</h1>
+          <p>Asistente Contable en Bello</p>
+          <p>Desarrollo de Software en Bello</p>
+          <p>Diseño Gráfico en Bello</p>
+          <p>Primera Infancia en Bello</p>
+          <p>Seguridad Laboral en Bello</p>
+          <p>Talento Humano en Bello</p>
+          <p>Mercadeo en Bello</p>
+          <p>Asesoría Comercial y de Servicios en Bello</p>  
+          
+
       </div>
 
       <div class="content hide-content" id="content_about">
@@ -143,13 +170,40 @@
           <div class="card-body">
             <h5 class="card-title">Cesde, 50 años de orgullo</h5>
             <p class="card-text">Un recorrido que nos hace soñar.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p>En Cesde nos sentimos orgullosos de celebrar nuestros primeros 50 años de historia y de cosechar infinidad de logros, aprendizajes y experiencias que nos llenan de alegría y de gratitud. Durante este tiempo, hemos materializado millones de sueños e impactado la vida de miles de jóvenes emprendedores; empresas, colaboradores y familias. 
+
+              Cesde es una Institución de Educación para el Trabajo y el Desarrollo Humano, fundada el 15 de julio de 1972, aprobada por la Secretaría de Educación Municipal, mediante resolución 05867 del 13 de julio de 2009.  
+              
+              Nuestra institución ofrece a la comunidad y al sector empresarial una amplia oferta de 33 programas técnicos en diferentes áreas del conocimiento, adscritos a la Escuela de Desarrollo Empresarial, Escuela de Creatividad y Nuevas Tecnologías, Escuela de Salud y Cuidado y la nueva Escuela de Agrotech. Estos programas son ofrecidos de manera presencial o sincrónica en Medellín, Bogotá, Bello, La Pintada, Apartadó y Rionegro. </p>
+            
           </div>
-          <div class="card-footer text-muted">
-            2 days ago
+          <div class="card-footer text-muted" id="current-date">
+          
+          <h3>Conoce nuestra historia</h3>
+          <p>Nuestro recorrido legitima la puesta en marcha de los proyectos que nos inspiran. Cesde destaca a nivel nacional por su trayectoria impecable, su certificación en calidad y el compromiso social que crece con las empresas más influyentes del país. Nuestro propósito y estrategia guían el viaje que nos hemos trazado 50 años hacia el futuro.</p>
+
           </div>
         </div>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="images/Cesde_1972-Fundacion-Cesde.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">1972</h5>
+              <p class="card-text"> Fundacion Cesde.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/Cesde_2021-Expansion.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">2022</h5>
+              <p class="card-text">Cesde, 50 años hacia el futuro.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
       </div>
+        
+      
     </div>
 
     
